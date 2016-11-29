@@ -18,7 +18,7 @@ sum=0
 str=""
 file.each do |row|
 str=file[i][2].to_s
-if(file[i][0].to_i>17 &&  !str = ~/[[:digit:]]/)
+if(file[i][0].to_i>17 &&  !str = ~ /[0-9]/)
 sum+=file[i][2].to_i
 end
 
