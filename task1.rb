@@ -22,8 +22,9 @@ end
 }
 puts i*i
 
- videos = []
-       search_response.data.items.each do |search_result|
-          videos << Youtube_Url + "#{search_result.id.videoId}"
-      end
-
+ mostpopular = []
+  search_response.data.items.each do |popular_res|    
+          mostpopular << Youtube_Url + "#{popular_res.id}"        
+  end
+    return mostpopular
+end
