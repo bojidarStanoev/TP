@@ -21,3 +21,9 @@ i+=1
 end
 }
 puts i*i
+
+ videos = []
+       search_response.data.items.each do |search_result|
+          videos << Youtube_Url + "#{search_result.id.videoId}"
+      end
+
